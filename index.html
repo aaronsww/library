@@ -21,7 +21,35 @@
         <div id="pages"></div>
         <div id="state"></div>
       </div>
+
+      <div class="userInput">
+        <div class="formTitle">
+          <label for="bookName">Title:</label>
+          <input id="bookName" name="bookName" type="text" />
+        </div>
+        <div class="formAuthor">
+          <label for="authorName">Author:</label>
+          <input id="authorName" name="authorName" type="text" />
+        </div>
+        <div class="formPages">
+          <label for="totalPages">Pages:</label>
+          <input id="totalPages" name="totalPages" type="number" />
+        </div>
+        <div class="formStatus">
+          <label for="readStatus">
+            <span>Have you read it?</span>
+            <input
+              id="readStatus"
+              name="readStatus"
+              type="checkbox"
+              value="read"
+            />
+          </label>
+        </div>
+        <button style="font-size: 20px;" type="submit">Submit</button>
+      </div>
     </div>
+
     <script src="index.js"></script>
   </body>
 </html>
