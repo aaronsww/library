@@ -16,6 +16,11 @@
     margin: 20px;
 }
 .mainContainer{
-    height: 40vh;
+    height: 70vh;
     background-color: beige;
+}
+.bookItself{
+    height: 300px;
+    width: 300px;
+    background-color: cadetblue;
 }
