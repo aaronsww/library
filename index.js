@@ -1,6 +1,7 @@
 let myLibrary = [];
 let i;
 
+const mainContainer = document.querySelector(".mainContainer")
 function Book(title, author, pages, status){
     this.title = title
     this.author = author
@@ -32,19 +33,32 @@ const create = document.querySelector(".create")
   
 
 create.addEventListener('click', () => {
+    const parentBook = document.createElement('div');
+
+    const childTitle = document.createElement('div');
     const bookName = document.querySelector("#bookName")
-    const title2 = document.querySelector("#title2")
-    title2.textContent = bookName.value
+    childTitle.textContent = bookName.value
 
+    const childAuthor = document.createElement('div');
     const authorName = document.querySelector("#authorName")
-    const author2 = document.querySelector("#author2")
-    author2.textContent = authorName.value
+    childAuthor.textContent = authorName.value
 
+    const childPages = document.createElement('div');
     const totalPages = document.querySelector("#totalPages")
-    const pages2 = document.querySelector("#pages2")
-    pages2.textContent = totalPages.value
+    childPages.textContent = totalPages.value
 
+    const childStatus = document.createElement('div');
     const readStatus = document.querySelector("#readStatus")
-    const state2 = document.querySelector("#state2")
-    state2.textContent = readStatus.value
+    childStatus.textContent = readStatus.value
+   
+    parentBook.appendChild(childTitle)
+    parentBook.appendChild(childAuthor)
+    parentBook.appendChild(childPages)
+    parentBook.appendChild(childStatus) 
+    parentBook.classList.add("bookItself");
+
+    mainContainer.appendChild(parentBook)
 })
+
+
+
