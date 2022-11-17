@@ -11,7 +11,7 @@ function Book(title, author, pages, status){
 
 myLibrary[0] = new Book('The Hobbit','J.R.R. Tolkien',295,'not read yet')
 
- function addBook(){
+ /*function addBook(){
      for(i = 1; i < 2; i++)
      {
         let userTitle = prompt("Enter title")
@@ -22,7 +22,7 @@ myLibrary[0] = new Book('The Hobbit','J.R.R. Tolkien',295,'not read yet')
     }
  }
 
-//addBook()   
+addBook()   */
 
 title.textContent = myLibrary[0].title;
 author.textContent = myLibrary[0].author;
@@ -31,7 +31,6 @@ state.textContent = myLibrary[0].status;
  
 const create = document.querySelector(".create")
   
-
 create.addEventListener('click', () => {
     const parentBook = document.createElement('div');
 
