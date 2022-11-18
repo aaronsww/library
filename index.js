@@ -9,7 +9,7 @@ function Book(title, author, pages, status){
     this.status = status
 }
 
-myLibrary[0] = new Book('The Hobbit','J.R.R. Tolkien',295,'not read yet')
+myLibrary[0] = new Book('The Hobbit','J.R.R. Tolkien','295 pages','not read yet')
 
  /*function addBook(){
      for(i = 1; i < 2; i++)
@@ -33,7 +33,7 @@ let popup = document.getElementById("popUp");
 
 function openPopup(){
     popup.classList.add("open-popup");
-    
+
 }
 
 function closePopup(){
