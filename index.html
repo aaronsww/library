@@ -12,7 +12,7 @@
       <p>Library</p>
     </div>
     <div style="display: flex; justify-content: center">
-      <button class="addBook">+ Add Book</button>
+      <button type="submit" class="addBook" onclick="openPopup()">+ Add Book</button>
     </div>
     <div class="mainContainer">
       <div class="bookItself">
@@ -22,7 +22,7 @@
         <div id="state"></div>
       </div>
 
-      <div class="userInput">
+      <div class="userInput" id="popUp">
         <div class="formTitle">
           <label for="bookName">Title:</label>
           <input id="bookName" name="bookName" type="text" />
@@ -38,12 +38,18 @@
         <div class="formStatus">
           <label for="readStatus">
             <span>Have you read it?</span>
-            <input type="checkbox" id="readStatus" name="readStatus">
+            <input type="checkbox" id="readStatus" name="readStatus" />
           </label>
         </div>
-        <button class="create" style="font-size: 20px;" type="submit">Submit</button>
+        <button
+          class="create"
+          style="font-size: 20px"
+          type="submit"
+          onclick="closePopup()"
+        >
+          Submit
+        </button>
       </div>
-
     </div>
     <script src="index.js"></script>
   </body>

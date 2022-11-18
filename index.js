@@ -28,8 +28,19 @@ title.textContent = myLibrary[0].title;
 author.textContent = myLibrary[0].author;
 pages.textContent = myLibrary[0].pages;
 state.textContent = myLibrary[0].status;
+
+let popup = document.getElementById("popUp");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+    
+}
+
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
  
-const create = document.querySelector(".create")
+const create = document.querySelector(".create");   
   
 create.addEventListener('click', () => {
     const parentBook = document.createElement('div');

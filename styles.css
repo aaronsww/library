@@ -14,17 +14,18 @@
     font-size: 2rem;
     padding: 20px;
     margin: 20px;
+    outline: none;
+    cursor: pointer;
 }
 .mainContainer{
-    height: 70vh;
-    background-color: beige;
-    display: flex;
-    justify-content: center;
+    padding: 50px 140px 50px 140px;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 .bookItself{
-    margin: 20px;
     height: 300px;
-    width: 250px;
     background-color: cadetblue;
     display: flex;
     flex-direction: column;
@@ -37,7 +38,6 @@
     padding: 10px;
 }
 .userInput{
-    margin: 20px;
     height: 400px;
     width: 300px;
     background-color:gold;
@@ -47,4 +47,14 @@
     align-items: center;
     justify-content: space-around;
     font-size: 20px;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform 0.3s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
 }
