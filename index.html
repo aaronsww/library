@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="header">
-      <p  >Library</p>
+      <p>Library</p>
     </div>
     <div style="display: flex; justify-content: center">
       <button type="submit" class="addBook" onclick="openPopup()">
@@ -38,23 +38,23 @@
       </div>
 
       <div class="userInput" id="popUp">
-        <div class="formTitle">
-          <label for="bookName">Title:</label>
-          <input id="bookName" name="bookName" type="text" />
-        </div>
-        <div class="formAuthor">
-          <label for="authorName">Author:</label>
-          <input id="authorName" name="authorName" type="text" />
-        </div>
-        <div class="formPages">
-          <label for="totalPages">Pages:</label>
-          <input id="totalPages" name="totalPages" type="number" />
-        </div>
+        <div id="addTitle">Add new book</div>
+        <input id="bookName" name="bookName" type="text" placeholder="Title" />
+        <input
+          id="authorName"
+          name="authorName"
+          type="text"
+          placeholder="Author"
+        />
+        <input
+          id="totalPages"
+          name="totalPages"
+          type="number"
+          placeholder="Pages"
+        />
         <div class="formStatus">
-          <label for="readStatus">
-            <span>Have you read it?</span>
-            <input type="checkbox" id="readStatus" name="readStatus" />
-          </label>
+          <span id="readStatus">Have you read it?</span>
+          <input type="checkbox" id="readStatus" name="readStatus" />
         </div>
         <button
           class="create"

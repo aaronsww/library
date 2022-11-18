@@ -87,14 +87,15 @@ body{
     flex: 1;
 }
 .userInput{
+    font-family: 'Kanit', sans-serif;
     height: 400px;
-    width: 300px;
-    background-color:gold;
-    border-radius: 6px;
+    width: 300px;   
+    text-align: center;
+    background-color:#fff;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    align-self: stretch;
     font-size: 20px;
     transform: translate(-50%, -50%) scale(0.1);
     visibility: hidden;  
@@ -102,6 +103,35 @@ body{
     top: 50%;
     left: 50%;
     transition: transform 0.3s, top 0.4s;
+}
+#addTitle{
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 500;
+}
+#bookName,#authorName,#totalPages{
+    font-family: 'Kanit', sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    margin: 15px 20px 0px 20px;
+    border-radius: 6px;
+}
+#readStatus{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.create{
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 12px;
+    border: none;
+    margin: 15px 20px 0px 20px;
+    border-radius: 6px;
+    background-color: #ffd500;
+}
+.create:hover{
+    background-color: #fdc500 ;
 }
 .open-popup{
     visibility: visible;
