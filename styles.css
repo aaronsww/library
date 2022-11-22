@@ -65,6 +65,7 @@ body{
     flex: 1;
 }
 #state{
+    font-family: 'Kanit', sans-serif;
     border: none;
     margin: 10px;
     background-color: #f5999c;
@@ -76,6 +77,7 @@ body{
     flex: 1;
 }
 #removeBtn{
+    font-family: 'Kanit', sans-serif;
     border: none;
     margin: 10px;
     background-color: #e0e0e0;

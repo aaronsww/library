@@ -83,17 +83,21 @@ create.addEventListener('click', () => {
    
     const removeOption = document.createElement('button');
     removeOption.setAttribute('id','removeBtn');
-    removeBtn.textContent = "Remove from list"
+    removeOption.textContent = "Remove from list"
 
     parentBook.appendChild(childTitle)
     parentBook.appendChild(childAuthor)
     parentBook.appendChild(childPages)
     parentBook.appendChild(childStatus) 
-    parentBook.appendChild(removeBtn)
+    parentBook.appendChild(removeOption)
     parentBook.classList.add("bookItself");
 
     mainContainer.appendChild(parentBook)
 })
+
+removeBtn.addEventListener('click', () => {
+    mainContainer.removeChild(parentBook)
+});
 
 const stateBtn = document.querySelector("#state")
 stateBtn.addEventListener('click', () => { 
