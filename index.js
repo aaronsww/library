@@ -13,19 +13,6 @@ function Book(title, author, pages, status){
 
 myLibrary[0] = new Book('The Hobbit','J.R.R. Tolkien','295 pages','Not read')
 
- /*function addBook(){
-     for(i = 1; i < 2; i++)
-     {
-        let userTitle = prompt("Enter title")
-        let userAuthor = prompt("Enter author")
-        let userPages = prompt("Enter total pages")
-        let userStatus = prompt("Enter status")
-        myLibrary[i] = new Book (userTitle, userAuthor, userPages, userStatus)
-    }
- }
-
-addBook()   */
-
 title.textContent = myLibrary[0].title;
 author.textContent = myLibrary[0].author;
 pages.textContent = myLibrary[0].pages;
@@ -68,27 +55,31 @@ create.addEventListener('click', () => {
      
     const readStatus = document.querySelector("#readStatus")
     if (readStatus.checked) {
-      childStatus.classList.add("readIt");
-      childStatus.textContent = "Read";   
+        childStatus.classList.add("readIt");
+        childStatus.textContent = "Read";   
     } else {
         childStatus.classList.add("notReadIt");
         childStatus.textContent = "Not read";
+        d=2;
     }
 
     childStatus.addEventListener('click', () => { 
-        d++
     if(d%2==0)
     {
-        childStatus.setAttribute("style", "background-color: #52b788;");
+        childStatus.classList.remove("notReadIt");
+        childStatus.classList.add("readIt");
         childStatus.textContent = "Read"
+        d++
     } 
     else  
     {
-        childStatus.setAttribute("style", "background-color: #f5999c;");
+        childStatus.classList.remove("readIt");
+        childStatus.classList.add("notReadIt");
         childStatus.textContent = "Not read"
+        d++
     }
-     })
-   
+     });
+
     const removeOption = document.createElement('button');
     removeOption.setAttribute('id','removeBtn');
     removeOption.textContent = "Remove from list"

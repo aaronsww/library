@@ -33,26 +33,34 @@
         <div id="title"></div>
         <div id="author"></div>
         <div id="pages"></div>
-        <button style=" background-color: #f5999c;" id="state"></button>
+        <button style="background-color: #f5999c" id="state"></button>
         <button id="removeBtn"></button>
       </div>
 
       <div class="userInput" id="popUp">
         <form action="">
           <div id="addTitle">Add new book</div>
-          <input id="bookName" name="bookName" type="text" placeholder="Title" required/>
+          <input
+            id="bookName"
+            name="bookName"
+            type="text"
+            placeholder="Title"
+            required
+          />
           <input
             id="authorName"
             name="authorName"
             type="text"
-            placeholder="Author" required
+            placeholder="Author"
+            required
           />
           <input
             id="totalPages"
             name="totalPages"
             type="number"
-            placeholder="Pages" 
-            min="1" required
+            placeholder="Pages"
+            min="1"
+            required
           />
           <div class="formStatus">
             <span id="readState">Have you read it?</span>
