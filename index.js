@@ -65,8 +65,16 @@ create.addEventListener('click', () => {
 
     const childStatus = document.createElement('button');
     childStatus.setAttribute('id','state');
+     
     const readStatus = document.querySelector("#readStatus")
-    childStatus.textContent = readStatus.value
+    if (readStatus.checked) {
+      childStatus.classList.add("readIt");
+      childStatus.textContent = "Read";   
+    } else {
+        childStatus.classList.add("notReadIt");
+        childStatus.textContent = "Not read";
+    }
+
     childStatus.addEventListener('click', () => { 
         d++
     if(d%2==0)
