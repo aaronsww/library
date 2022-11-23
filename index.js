@@ -96,9 +96,13 @@ create.addEventListener('click', () => {
 })
 
 removeBtn.addEventListener('click', () => {
-    mainContainer.removeChild(parentBook)
+    const bookItself = document.querySelector(".bookItself");   
+    mainContainer.removeChild(bookItself)
 });
 
+create.addEventListener('click', (e) => {
+    e.preventDefault() });
+    
 const stateBtn = document.querySelector("#state")
 stateBtn.addEventListener('click', () => { 
     c++
