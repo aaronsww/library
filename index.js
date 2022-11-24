@@ -91,14 +91,18 @@ create.addEventListener('click', () => {
     parentBook.appendChild(removeOption)
     parentBook.classList.add("bookItself");
 
-    mainContainer.appendChild(parentBook)
+    mainContainer.appendChild(parentBook);
+    removeOption.addEventListener('click', () => {
+        const bookItself = document.querySelector(".bookItself");   
+        mainContainer.removeChild(parentBook)
+    });
 })
-
+  
 removeBtn.addEventListener('click', () => {
     const bookItself = document.querySelector(".bookItself");   
     mainContainer.removeChild(bookItself)
 });
-
+  
 create.addEventListener('click', (e) => {
     e.preventDefault() });
     
