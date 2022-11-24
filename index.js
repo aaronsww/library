@@ -96,6 +96,8 @@ create.addEventListener('click', () => {
         const bookItself = document.querySelector(".bookItself");   
         mainContainer.removeChild(parentBook)
     });
+
+    document.getElementById('formItself').reset();
 })
   
 removeBtn.addEventListener('click', () => {

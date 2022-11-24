@@ -16,12 +16,21 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coustard&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="header">
-      <p>Library</p>
+      <div id="quoteMark">"</div>
+      <div id="quote">A reader lives a thousand lives before he dies.</div>
+      <div id="george">George R.R. Martin</div>
+      <div id="dragons">A Dance with Dragons</div>
     </div>
     <div style="display: flex; justify-content: center">
       <button type="submit" class="addBook" onclick="openPopup()">
@@ -38,7 +47,7 @@
       </div>
 
       <div class="userInput" id="popUp">
-        <form action="">
+        <form id="formItself" action="">
           <div id="addTitle">Add new book</div>
           <input
             id="bookName"

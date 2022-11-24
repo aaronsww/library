@@ -7,18 +7,42 @@ body{
 }
 .header{
     background-color: white ;
-    padding: 20px;
-    padding-left: 150px;
-    height: 10vh;
-    font-size: 3rem;
-    font-weight: 500;
     box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #003566;
+}
+#quoteMark{
+    font-family: 'Coustard', serif;
+    font-size: 56px;
+    margin-top: 20px;
+}
+#quote{
+    margin-top: -50px;
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    font-weight: 700;
+    
+}
+#george{
+    margin-top: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+}   
+#dragons{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 40px;
 }
 .addBook{
     font-family: 'Kanit', sans-serif;
     font-size: 2rem;
     padding: 5px 10px 5px 10px;
-    margin: 30px;
+    margin: 20px;
     cursor: pointer;
     font-weight: 500;
     background-color: #F5F5F5;   
@@ -49,7 +73,7 @@ body{
 }   
 #title{
     font-family: 'Playfair Display', serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     padding: 20px 20px 10px 20px; 
     color: #d4af37;
     flex: 1;
