@@ -1,6 +1,6 @@
 # Library
 
-<a href="https://aaronsww.github.io/library/">Live Demonstartion.</a>
+<a href="https://aaronsww.github.io/library">Live Demonstartion.</a>
 
 ## Project Summary
 
