@@ -59,10 +59,10 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-}
+}   
 .bookItself{
     font-family: 'Kanit', sans-serif;
-    height: 40vh;
+     
     background-color: #fff;
     display: flex;
     flex-direction: column;
